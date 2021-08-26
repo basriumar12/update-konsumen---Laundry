@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "174912023580",
+    "firebase_url": "https://win-laundry-default-rtdb.firebaseio.com",
+    "project_id": "win-laundry",
+    "storage_bucket": "win-laundry.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:174912023580:android:76590419bb60253ed6c3d9",
+        "android_client_info": {
+          "package_name": "com.windigitalkhatulistiwa.laundry"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "174912023580-rp153v524b59q3pl2jrcka6l37i5g7up.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkU7XdG3u8CsZkoVEusFl916IZR3vpeio"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "174912023580-hkp5rjpquemscdtp5thhb420uvu7nuqa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
