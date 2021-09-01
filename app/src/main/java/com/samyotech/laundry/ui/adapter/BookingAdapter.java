@@ -79,7 +79,7 @@ public class BookingAdapter extends RecyclerView.Adapter<BookingAdapter.MyViewHo
                     .into(holder.binding.status);
         }
         holder.binding.layanan.setText(item.getService_name());
-        holder.binding.harga.setText(item.getCurrency_code() + " " + AppFormat.addDelimiter((int)Double.parseDouble(item.getPrice()) + ""));
+        holder.binding.harga.setText(item.getCurrency_code() + " " + AppFormat.addDelimiter((int) Double.parseDouble(item.getPrice()) + ""));
 
         holder.binding.selengkapnya.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -99,6 +99,27 @@ public class BookingAdapter extends RecyclerView.Adapter<BookingAdapter.MyViewHo
                     alertDialogBatal(position);
             }
         });
+        String status = item.getOrder_status();
+        String statusName = "";
+        if (status.equals("0")) {
+            statusName = "Tertunda";
+        } else if (status.equals("1")) {
+            statusName = "Konfirmasi";
+        } else if (status.equals("2")) {
+            statusName = "Di Jemput";
+        } else if (status.equals("3")) {
+            statusName = "Proses";
+        } else if (status.equals("4")) {
+            statusName = "Di Kirim";
+        } else if (status.equals("5")) {
+            statusName = "Terkirim";
+        } else if (status.equals("6")) {
+            statusName = "Cancel";
+
+        }
+
+        binding.statusPesanan.setText(statusName);
+
     }
 
     @Override

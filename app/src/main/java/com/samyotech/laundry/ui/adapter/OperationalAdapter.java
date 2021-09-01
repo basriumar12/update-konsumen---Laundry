@@ -52,6 +52,11 @@ public class OperationalAdapter extends RecyclerView.Adapter<OperationalAdapter.
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
         binding.tvDate.setText("Hari : " + servicesDTOArrayList.get(position).getHari());
         binding.tvTime.setText("Jam Buka : " + servicesDTOArrayList.get(position).getJamBuka() + " Jam Tutup: " + servicesDTOArrayList.get(position).getJamTutup());
+
+        if(servicesDTOArrayList.get(position).getStatus().equals("0")){
+            binding.tvTime.setVisibility(View.GONE);
+            binding.tvDate.setVisibility(View.GONE);
+        }
     }
 
     @Override

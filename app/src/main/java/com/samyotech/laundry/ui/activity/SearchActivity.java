@@ -4,6 +4,7 @@ import android.content.Context;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -93,6 +94,7 @@ public class SearchActivity extends AppCompatActivity {
 
                     }
                 } else {
+                    Log.e("TAG","search : "+msg);
                     ProjectUtils.showToast(mContext, msg);
                 }
             }

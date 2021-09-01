@@ -167,9 +167,11 @@ public class AboutFragment extends Fragment {
                     sydney = new LatLng(Double.parseDouble(prefrence.getValue(Consts.LATITUDE)), Double.parseDouble(prefrence.getValue(Consts.LONGITUDE)));
 
                 } else {
+                    try {
+                        sydney = new LatLng(Double.parseDouble(popLaundryDTO.getLatitude()), Double.parseDouble(popLaundryDTO.getLongitude()));
+                    }catch (NumberFormatException e){
 
-                    sydney = new LatLng(Double.parseDouble(popLaundryDTO.getLatitude()), Double.parseDouble(popLaundryDTO.getLongitude()));
-
+                    }
                     googleMap.addMarker(new MarkerOptions().position(sydney).title(userDTO.getName()).title(popLaundryDTO.getShop_name()).snippet(userDTO.getUser_id()));
 
                     CameraPosition cameraPosition = new CameraPosition.Builder().target(sydney).zoom(12).build();

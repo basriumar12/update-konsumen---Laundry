@@ -7,6 +7,7 @@ public class OrderListDTO implements Serializable {
 
 
     String s_no = "";
+    String status_pesanan = "";
     String order_id = "";
     String user_id = "";
     String shop_id = "";
@@ -31,6 +32,14 @@ public class OrderListDTO implements Serializable {
     String shop_name = "";
     String shop_image = "";
     String service_name = "";
+
+    public String getStatus_pesanan() {
+        return status_pesanan;
+    }
+
+    public void setStatus_pesanan(String status_pesanan) {
+        this.status_pesanan = status_pesanan;
+    }
 
     public String getService_name() {
         return service_name;

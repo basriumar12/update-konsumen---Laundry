@@ -33,9 +33,10 @@
 
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
         android:id="@+id/swipe_refresh_layout"
+
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@+id/linearLayoutFooter"
+        android:layout_above="@+id/relativeBottomArea"
         android:layout_below="@+id/header_container"
         android:layout_marginTop="@dimen/_2sdp"
         android:background="@color/white">

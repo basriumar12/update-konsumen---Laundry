@@ -441,8 +441,11 @@ public class NearByFragment extends Fragment {
                 } else {
                     ProjectUtils.pauseProgressDialog();
                     getNearByLaundry();
+                    try {
+                        googleMap.clear();
+                    }catch (NullPointerException e){
 
-                    googleMap.clear();
+                    }
                 }
             }
         });

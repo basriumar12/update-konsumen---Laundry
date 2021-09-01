@@ -42,11 +42,20 @@
             </LinearLayout>
 
             <TextView
+                android:gravity="right"
+                android:id="@+id/status_pesanan"
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="staus" />
+            <TextView
                 android:id="@+id/layanan"
                 style="@style/TextAppearance.AppCompat.Body1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="Layanan cuci kiloan" />
+
+
 
             <TextView
                 android:id="@+id/harga"
