@@ -23,6 +23,7 @@ public class AppSignatureHelper extends ContextWrapper {
     }
     /**
      * Get all the app signatures for the current package
+     *
      */
     public ArrayList<String> getAppSignatures() {
         ArrayList<String> appCodes = new ArrayList<>();
